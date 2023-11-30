@@ -1,0 +1,32 @@
+miserver_users:
+  - epcjr
+
+# Marty's users
+  - stroudm
+  - mbear
+  - jmd
+  - edye
+  - jklaas
+  - rharolde
+  - smurph
+  - dbonder
+  - craigmax
+  - abscott
+  - rnmn
+  - regray
+  - poquette
+
+# Dan's users
+  - eklund
+  - amylieb
+  - dok
+  - grundler
+  - imanz
+  - jarhelz
+  - jhehnlin
+  - rguzmanl
+  - waltr
+  
+miserver_remove_users:
+  - steinhof
+  - jhagley

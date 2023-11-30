@@ -1,0 +1,38 @@
+# This is an Ansible inventory file in INI format. You can define a list of
+# hosts and groups to be managed by this particular inventory.
+#
+# Connection information can be added to groups, more information is
+# documented at: 
+# https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
+#
+# A way to check that all of your expected hosts are accessable is:
+# ansible all -m ping --ask-become-pass
+#
+# Full perfSONAR hosts inventory grouped by installation bundle
+#[all:vars]
+#ansible_become=True
+#ansible_become_user=root
+#ansible_become_method=su
+#
+# passwords can be encrypted via ansible-vault
+# ansible-vault encrypt_string --stdin-name=ansible_become_password
+
+[ps_testpoint]
+
+[ps_toolkit]
+
+[ps_archive]
+perfsonar-arch.miserver.it.umich.edu
+
+[ps_maddash]
+
+[ps_psconfig_publisher]
+
+[ps_psconfig_web-admin]
+
+[ps_perfsonar_server]
+perfsonar.miserver.it.umich.edu
+
+[miserver]
+perfsonar.miserver.it.umich.edu
+perfsonar-arch.miserver.it.umich.edu
