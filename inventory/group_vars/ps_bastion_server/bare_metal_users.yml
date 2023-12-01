@@ -1,0 +1,16 @@
+bare_metal_users:
+  - epcjr
+
+# Marty's users
+  - craigmax
+  - poquette
+
+# Dan's users
+  - amylieb
+  - dok
+  - grundler
+  - imanz
+  
+miserver_remove_users:
+  - steinhof
+  - jhagley
