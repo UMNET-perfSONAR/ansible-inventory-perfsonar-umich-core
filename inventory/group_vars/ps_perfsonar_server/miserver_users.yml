@@ -10,7 +10,6 @@ miserver_users:
   - rharolde
   - smurph
   - dbonder
-  - craigmax
   - abscott
   - rnmn
   - regray
@@ -25,9 +24,11 @@ miserver_users:
   - imanz
   - jarhelz
   - jhehnlin
-  - rguzmanl
+  - craigmax
+  - achawan
   - waltr
   
 miserver_remove_users:
   - steinhof
   - jhagley
+  - rguzmanl
