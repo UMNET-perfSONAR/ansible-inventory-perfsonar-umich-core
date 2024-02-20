@@ -18,11 +18,29 @@
 # ansible-vault encrypt_string --stdin-name=ansible_become_password
 
 [ps_testpoint]
+#perfsonar.miserver.it.umich.edu
+perfsonar-bin-arbl.umnet.umich.edu
+perfsonar-bin-seb.umnet.umich.edu
+perfsonar-core-cool.umnet.umich.edu
+perfsonar-core-lsa.umnet.umich.edu
+perfsonar-core-fxb.umnet.umich.edu
+perfsonar-core-seb.umnet.umich.edu
+perfsonar-dc-macc.umnet.umich.edu
+perfsonar-dc-dbn.umd.umich.edu
 
 [ps_toolkit]
 
 [ps_archive]
-perfsonar-arch.miserver.it.umich.edu
+#perfsonar-arch.miserver.it.umich.edu
+#ps-archive.miserver.it.umich.edu
+#ps-maddash.miserver.it.umich.edu
+ps-grafana.miserver.it.umich.edu
+
+[ps_grafana]
+#perfsonar-arch.miserver.it.umich.edu
+#ps-archive.miserver.it.umich.edu
+#ps-maddash.miserver.it.umich.edu
+ps-grafana.miserver.it.umich.edu
 
 [ps_maddash]
 
@@ -35,4 +53,5 @@ perfsonar.miserver.it.umich.edu
 
 [miserver]
 perfsonar.miserver.it.umich.edu
-perfsonar-arch.miserver.it.umich.edu
+#perfsonar-arch.miserver.it.umich.edu
+ps-archive.miserver.it.umich.edu

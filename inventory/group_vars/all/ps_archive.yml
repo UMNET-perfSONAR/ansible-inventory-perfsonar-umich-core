@@ -8,7 +8,13 @@
 #
 # example:
 # perfsonar_archive_auth_list:
-#  - address: ip_addr
+#  - ip: ip_addr
 #    state: [ present | absent ]
 #    user: perfsonar
-perfsonar_archive_auth_list: []
+perfsonar_archive_auth_list:
+  - ip: 10.10.10.11/24
+    state: present
+  - ip: 10.10.10.12
+    state: present
+  - ip: 10.10.10.10
+    state: present

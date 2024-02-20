@@ -24,6 +24,9 @@ perfsonar_os_update: False
 #
 perfsonar_release: release
 
+#perfsonar_repo: http://software.internet2.edu/rpms/el9/x86_64/latest/packages/perfsonar-repo-0.11-1.noarch.rpm
+perfsonar_repo: http://software.internet2.edu/rpms/el9/x86_64/latest/packages/perfsonar-repo-nightly-minor-0.11-1.noarch.rpm
+
 # perfSONAR bundle to install
 # Refer to the list of all perfSONAR bundles at
 # http://docs.perfsonar.net/install_options.html
