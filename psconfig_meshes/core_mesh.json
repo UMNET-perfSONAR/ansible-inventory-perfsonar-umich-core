@@ -82,6 +82,7 @@
         "task_latencybg": {
             "group": "core_group_mesh",
             "test": "test_latencybg",
+            "schedule": "schedule_PT10M",
             "archives": [ "core_http_archive" ],
             "reference": {
                 "display-task-name": "Example Loss Tests"
