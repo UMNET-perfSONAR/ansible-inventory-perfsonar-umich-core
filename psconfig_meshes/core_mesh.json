@@ -1,0 +1,92 @@
+{
+    "_meta":{
+        "display-name": "Example Measurements"
+    },
+    
+    "archives": {
+	"core_http_archive": {
+	    "archiver": "http",
+	    "data": {
+		"schema": 3,
+		"_url": "https://141.211.76.5/logstash",
+		"verify-ssl": false,
+		"op": "put",
+		"_headers": {
+		    "x-ps-observer": "{% scheduled_by_address %}",
+		    "content-type": "application/json",
+		    
+		}
+	    },
+	    "_meta": {
+		"esmond_url": "https://141.211.76.5/esmond/perfsonar/archive/"
+	    }
+	}
+    },
+    
+    "addresses": {
+        "perfsonar-bin-arbl.umnet.umich.edu": { "address": "perfsonar-bin-arbl.umnet.umich.edu" },
+        "perfsonar-bin-seb.umnet.umich.edu": { "address": "perfsonar-bin-seb.umnet.umich.edu" }
+    },
+    
+    "groups": {
+        "core_group_mesh": {
+            "type": "mesh",
+            "addresses": [
+                { "name": "perfsonar-bin-arbl.umnet.umich.edu" },
+                { "name": "perfsonar-bin-seb.umnet.umich.edu" }
+            ]
+        }
+    },
+    
+    "tests": {
+        "test_throughput": {
+            "type": "throughput",
+            "spec": {
+                "source": "{% address[0] %}",
+                "dest": "{% address[1] %}",
+                "duration": "PT30S"
+            }
+        },
+        "test_latencybg": {
+            "type": "latencybg",
+            "spec": {
+                "source": "{% address[0] %}",
+                "dest": "{% address[1] %}",
+                "flip": "{% flip %}"
+            }
+        }
+    },
+    
+    "schedules": {
+        "schedule_PT4H": {
+            "repeat": "PT4H",
+            "sliprand": true,
+            "slip": "PT4H"
+        },
+        "schedule_PT10M": {
+            "repeat": "PT10M",
+            "sliprand": true,
+            "slip": "PT10M"
+        }
+    },
+    
+    "tasks": {
+        "task_throughput": {
+            "group": "core_group_mesh",
+            "test": "test_throughput",
+            "schedule": "schedule_PT4H",
+            "archives": [ "core_http_archive" ],
+            "reference": {
+                "display-task-name": "Example Throughput Tests"
+            }
+        },
+        "task_latencybg": {
+            "group": "core_group_mesh",
+            "test": "test_latencybg",
+            "archives": [ "core_http_archive" ],
+            "reference": {
+                "display-task-name": "Example Loss Tests"
+            }
+        }
+    }
+}

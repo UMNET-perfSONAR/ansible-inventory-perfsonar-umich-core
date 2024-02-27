@@ -13,8 +13,40 @@
 #    user: perfsonar
 perfsonar_archive_auth_list:
   - ip: 10.10.10.11/24
-    state: present
+    state: absent
   - ip: 10.10.10.12
-    state: present
+    state: absent
   - ip: 10.10.10.10
+    state: absent
+
+  # perfsonar-bin-arbl.umnet.umich.edu
+  - ip: 192.12.80.226
+    state: present
+
+  # perfsonar-bin-seb.umnet.umich.edu
+  - ip: 192.12.80.238
+    state: present
+
+  # perfsonar-core-cool.umnet.umich.edu
+  - ip: 198.108.9.6
+    state: present
+
+  # perfsonar-core-lsa.umnet.umich.edu
+  - ip: 198.108.9.30
+    state: present
+
+  # perfsonar-core-fxb.umnet.umich.edu
+  - ip: 198.108.9.18
+    state: present
+
+  # perfsonar-core-seb.umnet.umich.edu
+  - ip: 198.108.9.42
+    state: present
+
+  # perfsonar-dc-macc.umnet.umich.edu
+  - ip: 198.108.9.54
+    state: present
+
+  # perfsonar-dc-dbn.umd.umich.edu
+  - ip: 141.215.5.133
     state: present
