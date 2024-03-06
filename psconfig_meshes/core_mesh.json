@@ -58,16 +58,23 @@
     },
 
     "schedules": {
+
         "schedule_PT4H": {
             "repeat": "PT4H",
             "sliprand": true,
             "slip": "PT4H"
         },
+
+        "schedule_PT24H": {
+            "repeat": "PT24H"
+        },
+
         "schedule_PT10M": {
             "repeat": "PT10M",
             "sliprand": true,
             "slip": "PT10M"
         }
+
     },
 
     "tasks": {
@@ -84,7 +91,7 @@
         "task_latencybg": {
             "group": "core_group_mesh",
             "test": "test_latencybg",
-            "schedule": "schedule_PT10M",
+            "schedule": "schedule_PT24H",
             "archives": [ "core_http_archive" ],
             "reference": {
                 "display-task-name": "Example Loss Tests"
