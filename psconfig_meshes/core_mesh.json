@@ -51,6 +51,7 @@
             "spec": {
                 "source": "{% address[0] %}",
                 "dest": "{% address[1] %}",
+		"duration": "PT24H",
                 "flip": "{% flip %}"
             }
         }
