@@ -31,8 +31,8 @@
         "core_group_mesh": {
             "type": "mesh",
             "addresses": [
-                { "name": "perfsonar-bin-arbl.umnet.umich.edu" },
-                { "name": "perfsonar-bin-seb.umnet.umich.edu" }
+                { "name": "perfsonar-bin-arbl-10ge.umnet.umich.edu" },
+                { "name": "perfsonar-bin-seb-10ge.umnet.umich.edu" }
             ]
         }
     },
