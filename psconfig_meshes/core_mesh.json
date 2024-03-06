@@ -2,7 +2,7 @@
     "_meta":{
         "display-name": "Example Measurements"
     },
-    
+
     "archives": {
 	"core_http_archive": {
 	    "archiver": "http",
@@ -21,18 +21,18 @@
 	    }
 	}
     },
-    
+
     "addresses": {
-        "perfsonar-bin-arbl.umnet.umich.edu": { "address": "perfsonar-bin-arbl.umnet.umich.edu" },
-        "perfsonar-bin-seb.umnet.umich.edu": { "address": "perfsonar-bin-seb.umnet.umich.edu" }
+        "perfsonar-bin-arbl.umnet.umich.edu": { "address": "perfsonar-bin-arbl-10ge.umnet.umich.edu" },
+        "perfsonar-bin-seb.umnet.umich.edu": { "address": "perfsonar-bin-seb-10ge.umnet.umich.edu" }
     },
-    
+
     "groups": {
         "core_group_mesh": {
             "type": "mesh",
             "addresses": [
-                { "name": "perfsonar-bin-arbl-10ge.umnet.umich.edu" },
-                { "name": "perfsonar-bin-seb-10ge.umnet.umich.edu" }
+                { "name": "perfsonar-bin-arbl.umnet.umich.edu" },
+                { "name": "perfsonar-bin-seb.umnet.umich.edu" }
             ]
         }
     },
@@ -55,7 +55,7 @@
             }
         }
     },
-    
+
     "schedules": {
         "schedule_PT4H": {
             "repeat": "PT4H",
@@ -68,7 +68,7 @@
             "slip": "PT10M"
         }
     },
-    
+
     "tasks": {
         "task_throughput": {
             "group": "core_group_mesh",
@@ -79,6 +79,7 @@
                 "display-task-name": "Example Throughput Tests"
             }
         },
+
         "task_latencybg": {
             "group": "core_group_mesh",
             "test": "test_latencybg",
