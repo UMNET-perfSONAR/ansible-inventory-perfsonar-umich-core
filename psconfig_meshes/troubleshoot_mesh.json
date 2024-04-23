@@ -95,7 +95,6 @@
     "tasks": {
 
         "task_rtt": {
-	    "disabled": false,
             "group": "core_group_mesh",
             "test": "test_rtt",
             "schedule": "schedule_PT1M",
