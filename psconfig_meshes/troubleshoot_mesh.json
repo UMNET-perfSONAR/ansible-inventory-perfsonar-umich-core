@@ -82,7 +82,7 @@
             "repeat": "PT1M",
             "sliprand": true,
             "slip": "PT1M"
-        }
+        },
 
         "schedule_PT10M": {
             "repeat": "PT10M",
